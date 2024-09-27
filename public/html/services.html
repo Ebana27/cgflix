@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGFLIX - Nos Services</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.custom-yellow {
+  color: #FFD700;
+}
+
+.bg-custom-yellow {
+  background-color: #FFD700;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.animated-bg {
+  background: linear-gradient(270deg, #111, #2c2c2c);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body class="animated-bg">
+<header class="fixed w-full z-50 bg-black bg-opacity-75">
+  <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <a href="/" class="text-3xl font-bold custom-yellow text-shadow">CGFLIX</a>
+    <div class="flex space-x-4">
+      <a href="/films" class="hover:custom-yellow transition-colors duration-300">Films</a>
+      <a href="/series" class="hover:custom-yellow transition-colors duration-300">Séries</a>
+      <a href="/animes" class="hover:custom-yellow transition-colors duration-300">Animes</a>
+      <a href="/services" class="custom-yellow transition-colors duration-300">Services</a>
+    </div>
+    <button class="bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Connexion</button>
+  </nav>
+</header>
+
+<main class="pt-20 px-6">
+  <section class="container mx-auto py-16">
+    <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center custom-yellow">Nos Services</h1>
+    <p class="text-xl text-center mb-12">Découvrez les services uniques que CGFLIX offre pour améliorer votre expérience de divertissement</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 rounded-lg p-6 hover-scale">
+        <h2 class="text-2xl font-semibold mb-4 custom-yellow">Demande de Films et Séries</h2>
+        <p class="mb-4">Vous ne trouvez pas le film ou la série que vous recherchez ? Pas de problème ! Notre service de demande vous permet de nous solliciter pour obtenir le contenu que vous désirez.</p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Service prépayé</li>
+          <li>Recherche personnalisée</li>
+          <li>Délai de traitement rapide</li>
+        </ul>
+        <a href="/demande" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Faire une demande</a>
+      </div>
+      
+      <div class="bg-gray-800 rounded-lg p-6 hover-scale">
+        <h2 class="text-2xl font-semibold mb-4 custom-yellow">Streaming Premium</h2>
+        <p class="mb-4">Profitez d'une expérience de visionnage optimale avec notre offre Premium. Accédez à du contenu exclusif et bénéficiez d'avantages uniques.</p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Qualité HD et 4K</li>
+          <li>Contenu exclusif</li>
+          <li>Sans publicité</li>
+          <li>Téléchargements illimités</li>
+        </ul>
+        <a href="/premium" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Devenir Premium</a>
+      </div>
+      
+      <div class="bg-gray-800 rounded-lg p-6 hover-scale">
+        <h2 class="text-2xl font-semibold mb-4 custom-yellow">Bot Telegram</h2>
+        <p class="mb-4">Restez connecté et obtenez des recommandations personnalisées grâce à notre bot Telegram intelligent.</p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Recommandations personnalisées</li>
+          <li>Notifications de nouveaux contenus</li>
+          <li>Recherche rapide de films et séries</li>
+          <li>Liens de téléchargement directs</li>
+        </ul>
+        <a href="/bot" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Rejoindre le groupe Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center custom-yellow">Services Complémentaires</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 rounded-lg p-6 hover-scale">
+        <h3 class="text-xl font-semibold mb-4 custom-yellow">Sous-titrage Personnalisé</h3>
+        <p class="mb-4">Nous offrons un service de sous-titrage en langues locales congolaises pour une meilleure accessibilité de nos contenus.</p>
+        <a href="/sous-titres" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">En savoir plus</a>
+      </div>
+      
+      <div class="bg-gray-800 rounded-lg p-6 hover-scale">
+        <h3 class="text-xl font-semibold mb-4 custom-yellow">Production Locale</h3>
+        <p class="mb-4">CGFLIX s'engage à soutenir et promouvoir la production cinématographique congolaise. Découvrez comment nous pouvons vous aider à réaliser votre projet.</p>
+        <a href="/production" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Proposer un projet</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center custom-yellow">Témoignages</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 rounded-lg p-6">
+        <p class="mb-4">"Le service de demande de films est incroyable. J'ai pu regarder un classique congolais introuvable ailleurs !"</p>
+        <p class="font-semibold">- Jeanne M., Kinshasa</p>
+      </div>
+      
+      <div class="bg-gray-800 rounded-lg p-6">
+        <p class="mb-4">"Le bot Telegram est super pratique. Je reçois des recommandations parfaites chaque semaine."</p>
+        <p class="font-semibold">- Patrick K., Lubumbashi</p>
+      </div>
+      
+      <div class="bg-gray-800 rounded-lg p-6">
+        <p class="mb-4">"Grâce au sous-titrage en lingala, ma grand-mère peut enfin profiter des films avec nous. Merci CGFLIX !"</p>
+        <p class="font-semibold">- Sarah B., Kisangani</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-black py-8 px-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-4 md:mb-0">
+      <img src="https://placehold.co/100x50/FFD700/000000?text=CGFLIX" alt="CGFLIX Logo" class="h-12">
+    </div>
+    <div class="flex flex-wrap justify-center md:justify-end space-x-4">
+      <a href="/about" class="hover:custom-yellow transition-colors duration-300">À propos</a>
+      <a href="/contact" class="hover:custom-yellow transition-colors duration-300">Contact</a>
+      <a href="/faq" class="hover:custom-yellow transition-colors duration-300">FAQ</a>
+      <a href="/terms" class="hover:custom-yellow transition-colors duration-300">Conditions d'utilisation</a>
+    </div>
+  </div>
+  <div class="mt-8 text-center text-sm text-gray-500">
+    © 2023 CGFLIX. Tous droits réservés. La plateforme de streaming conçue pour les Congolais.
+  </div>
+</footer>
+
+</body></html>

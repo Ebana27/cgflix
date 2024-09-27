@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGFLIX - Cinéma Congolais en Ligne</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./public/css/main.css">
+</head>
+<body class="animated-bg">
+<header class="fixed w-full z-50 bg-black bg-opacity-75">
+  <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <a href="/#" class="text-3xl font-bold custom-yellow text-shadow">CGFLIX</a>
+    <div class="flex space-x-4">
+      <a href="./public/html/category.html" class="hover:custom-yellow transition-colors duration-300">Films</a>
+      <a href="/series" class="hover:custom-yellow transition-colors duration-300">Séries</a>
+      <a href="./public/html/animes.html" class="hover:custom-yellow transition-colors duration-300">Animes</a>
+      <a href="./public/html/services.html" class="hover:custom-yellow transition-colors duration-300">Services</a>
+    </div>
+    <button class="bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Connexion</button>
+  </nav>
+</header>
+
+<main class="pt-20">
+  <section class="hero h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+    <div class="text-center">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4 custom-yellow text-shadow">Bienvenue sur CGFLIX</h1>
+      <p class="text-xl md:text-2xl mb-8">La plateforme de cinéma mondiale en ligne spéciale pour les Congolais</p>
+      <a href="#featured" class="bg-custom-yellow text-black px-8 py-3 rounded-full text-lg hover:bg-opacity-80 transition-colors duration-300">Découvrir</a>
+    </div>
+  </section>
+
+  <section id="featured" class="py-16 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center custom-yellow">Films à l'affiche</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover-scale">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Film 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">La Forêt Enchantée</h3>
+          <p class="text-sm text-gray-400">Un voyage magique au cœur du Congo</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover-scale">
+        <img src="https://images.unsplash.com/photo-1559222203-297c924009f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Film 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">Kinshasa Express</h3>
+          <p class="text-sm text-gray-400">Une aventure palpitante dans la capitale</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover-scale">
+        <img src="https://images.unsplash.com/photo-1568005885177-4dd2b322d2ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Film 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">Les Tambours de l'Espoir</h3>
+          <p class="text-sm text-gray-400">L'histoire inspirante d'un jeune musicien</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover-scale">
+        <img src="https://images.unsplash.com/photo-1578996952170-e4ed76a33cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Film 4" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold mb-2">Le Secret du Fleuve</h3>
+          <p class="text-sm text-gray-400">Un mystère captivant au bord du Congo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-900 py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center custom-yellow">Nos Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold mb-4">Demande de Films</h3>
+          <p class="mb-4">Vous ne trouvez pas votre film préféré ? Demandez-le nous et nous vous l'obtiendrons !</p>
+          <a href="/demande" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">En savoir plus</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold mb-4">Streaming Premium</h3>
+          <p class="mb-4">Accédez à notre catalogue exclusif et profitez d'une qualité HD sans interruption.</p>
+          <a href="/premium" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Devenir Premium</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="text-xl font-semibold mb-4">Bot Telegram</h3>
+          <p class="mb-4">Recevez des recommandations personnalisées et des liens de téléchargement via notre bot Telegram.</p>
+          <a href="/bot" class="inline-block bg-custom-yellow text-black px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors duration-300">Rejoindre</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center custom-yellow">Commentaires des Utilisateurs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <p class="mb-4">"CGFLIX est incroyable ! J'ai enfin accès à tous mes films congolais préférés en un seul endroit."</p>
+          <p class="font-semibold">- Marie K.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <p class="mb-4">"Le service de demande de films est génial. J'ai pu regarder un classique que je cherchais depuis des années !"</p>
+          <p class="font-semibold">- Jean-Paul M.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <p class="mb-4">"La qualité du streaming est excellente, même avec ma connexion internet moyenne. Merci CGFLIX !"</p>
+          <p class="font-semibold">- Sophie L.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-black py-8 px-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-4 md:mb-0">
+      <img src="https://placehold.co/100x50/FFD700/000000?text=CGFLIX" alt="CGFLIX Logo" class="h-12">
+    </div>
+    <div class="flex flex-wrap justify-center md:justify-end space-x-4">
+      <a href="/about" class="hover:custom-yellow transition-colors duration-300">À propos</a>
+      <a href="/contact" class="hover:custom-yellow transition-colors duration-300">Contact</a>
+      <a href="/faq" class="hover:custom-yellow transition-colors duration-300">FAQ</a>
+      <a href="/terms" class="hover:custom-yellow transition-colors duration-300">Conditions d'utilisation</a>
+    </div>
+  </div>
+  <div class="mt-8 text-center text-sm text-gray-500">
+    © 2023 CGFLIX. Tous droits réservés. Plateforme de streaming conçue pour les Congolais.
+  </div>
+</footer>
+
+</body></html>
